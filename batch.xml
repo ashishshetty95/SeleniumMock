@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="suite">
+  <test name="Test">
+    <classes>
+      <class name="TestNG.InvocationCount"/>
+      <class name="TestNG.DataProviderExcel"/>
+      <class name="TestNG.DataProviderSameClass"/>
+      <class name="TestNG.DependsOnMethods"/>
+      <class name="TestNG.DataProviderInDifferentClass"/>
+      <class name="TestNG.Priority"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
