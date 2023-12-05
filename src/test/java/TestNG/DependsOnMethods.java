@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import GenericUtilities.BaseClass;
 
 public class DependsOnMethods extends BaseClass {
-	@Test
+	@Test(retryAnalyzer = GenericUtilities.RetryAnalyserImplementation.class)
 	public void testA() {
 		System.out.println("testing A");
 		Assert.fail();

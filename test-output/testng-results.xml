@@ -1,38 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="3" ignored="0" total="6" passed="0" failed="1" skipped="2">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-03T14:08:10 GMT+05:30" name="Suite" finished-at="2023-12-03T14:08:40 GMT+05:30" duration-ms="30564">
+  <suite started-at="2023-12-04T09:36:49 GMT+05:30" name="Default suite" finished-at="2023-12-04T09:36:57 GMT+05:30" duration-ms="8655">
     <groups>
     </groups>
-    <test started-at="2023-12-03T14:08:10 GMT+05:30" name="Test" finished-at="2023-12-03T14:08:40 GMT+05:30" duration-ms="30564">
-      <class name="TestNG.DependsOnMethods">
-        <test-method is-config="true" signature="config_BS()[pri:0, instance:TestNG.DependsOnMethods@1d296da]" started-at="2023-12-03T14:08:10 GMT+05:30" name="config_BS" finished-at="2023-12-03T14:08:10 GMT+05:30" duration-ms="26" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- config_BS -->
-        <test-method is-config="true" signature="config_BT()[pri:0, instance:TestNG.DependsOnMethods@1d296da]" started-at="2023-12-03T14:08:10 GMT+05:30" name="config_BT" finished-at="2023-12-03T14:08:10 GMT+05:30" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- config_BT -->
-        <test-method is-config="true" signature="config_BC()[pri:0, instance:TestNG.DependsOnMethods@1d296da]" started-at="2023-12-03T14:08:10 GMT+05:30" name="config_BC" finished-at="2023-12-03T14:08:38 GMT+05:30" duration-ms="28690" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- config_BC -->
-        <test-method is-config="true" signature="config_BM()[pri:0, instance:TestNG.DependsOnMethods@1d296da]" started-at="2023-12-03T14:08:39 GMT+05:30" name="config_BM" finished-at="2023-12-03T14:08:39 GMT+05:30" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- config_BM -->
-        <test-method retried="true" signature="testA()[pri:0, instance:TestNG.DependsOnMethods@1d296da]" started-at="2023-12-03T14:08:39 GMT+05:30" name="testA" finished-at="2023-12-03T14:08:39 GMT+05:30" duration-ms="34" status="SKIP">
-          <exception class="java.lang.AssertionError">
+    <test started-at="2023-12-04T09:36:49 GMT+05:30" name="Default test" finished-at="2023-12-04T09:36:57 GMT+05:30" duration-ms="8655">
+      <class name="SeleniumGrid.sameDevice">
+        <test-method signature="test()[pri:0, instance:SeleniumGrid.sameDevice@35d019a3]" started-at="2023-12-04T09:36:49 GMT+05:30" name="test" finished-at="2023-12-04T09:36:57 GMT+05:30" duration-ms="8514" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[Could not start a new session. Response code 500. Message: Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-D4RH5SI9', ip: '192.168.16.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: unknown 
+Host info: host: 'LAPTOP-D4RH5SI9', ip: '192.168.16.1'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, platformName: windows}]}]
+Capabilities {browserName: chrome, platformName: windows}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.fail(Assert.java:115)
-at TestNG.DependsOnMethods.testA(DependsOnMethods.java:13)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Unable to create new service: ChromeDriverService
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-D4RH5SI9', ip: '192.168.16.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: unknown 
+Host info: host: 'LAPTOP-D4RH5SI9', ip: '192.168.16.1'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, platformName: windows}]}]
+Capabilities {browserName: chrome, platformName: windows}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:159)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:139)
+at SeleniumGrid.sameDevice.test(sameDevice.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -63,251 +72,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testA -->
-        <test-method is-config="true" signature="config_AM()[pri:0, instance:TestNG.DependsOnMethods@1d296da]" started-at="2023-12-03T14:08:39 GMT+05:30" name="config_AM" finished-at="2023-12-03T14:08:39 GMT+05:30" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- config_AM -->
-        <test-method retried="true" signature="testA()[pri:0, instance:TestNG.DependsOnMethods@1d296da]" started-at="2023-12-03T14:08:39 GMT+05:30" name="testA" finished-at="2023-12-03T14:08:39 GMT+05:30" duration-ms="2" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.fail(Assert.java:115)
-at TestNG.DependsOnMethods.testA(DependsOnMethods.java:13)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testA -->
-        <test-method is-config="true" signature="config_BM()[pri:0, instance:TestNG.DependsOnMethods@1d296da]" started-at="2023-12-03T14:08:39 GMT+05:30" name="config_BM" finished-at="2023-12-03T14:08:39 GMT+05:30" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- config_BM -->
-        <test-method is-config="true" signature="config_AM()[pri:0, instance:TestNG.DependsOnMethods@1d296da]" started-at="2023-12-03T14:08:39 GMT+05:30" name="config_AM" finished-at="2023-12-03T14:08:39 GMT+05:30" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- config_AM -->
-        <test-method is-config="true" signature="config_BM()[pri:0, instance:TestNG.DependsOnMethods@1d296da]" started-at="2023-12-03T14:08:39 GMT+05:30" name="config_BM" finished-at="2023-12-03T14:08:39 GMT+05:30" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- config_BM -->
-        <test-method retried="true" signature="testA()[pri:0, instance:TestNG.DependsOnMethods@1d296da]" started-at="2023-12-03T14:08:39 GMT+05:30" name="testA" finished-at="2023-12-03T14:08:39 GMT+05:30" duration-ms="3" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.fail(Assert.java:115)
-at TestNG.DependsOnMethods.testA(DependsOnMethods.java:13)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testA -->
-        <test-method is-config="true" signature="config_AM()[pri:0, instance:TestNG.DependsOnMethods@1d296da]" started-at="2023-12-03T14:08:39 GMT+05:30" name="config_AM" finished-at="2023-12-03T14:08:39 GMT+05:30" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- config_AM -->
-        <test-method signature="testA()[pri:0, instance:TestNG.DependsOnMethods@1d296da]" started-at="2023-12-03T14:08:39 GMT+05:30" name="testA" finished-at="2023-12-03T14:08:39 GMT+05:30" duration-ms="6" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.fail(Assert.java:115)
-at TestNG.DependsOnMethods.testA(DependsOnMethods.java:13)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testA -->
-        <test-method is-config="true" signature="config_BM()[pri:0, instance:TestNG.DependsOnMethods@1d296da]" started-at="2023-12-03T14:08:39 GMT+05:30" name="config_BM" finished-at="2023-12-03T14:08:39 GMT+05:30" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- config_BM -->
-        <test-method is-config="true" signature="config_AM()[pri:0, instance:TestNG.DependsOnMethods@1d296da]" started-at="2023-12-03T14:08:40 GMT+05:30" name="config_AM" finished-at="2023-12-03T14:08:40 GMT+05:30" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- config_AM -->
-        <test-method signature="testC()[pri:0, instance:TestNG.DependsOnMethods@1d296da]" started-at="2023-12-03T14:08:40 GMT+05:30" name="testC" finished-at="2023-12-03T14:08:40 GMT+05:30" depends-on-methods="TestNG.DependsOnMethods.testA" duration-ms="4" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestNG.DependsOnMethods.testC() on instance TestNG.DependsOnMethods@1d296da depends on not successfully finished methods 
-[TestNG.DependsOnMethods.testA() on instance TestNG.DependsOnMethods@1d296da]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestNG.DependsOnMethods.testC() on instance TestNG.DependsOnMethods@1d296da depends on not successfully finished methods 
-[TestNG.DependsOnMethods.testA() on instance TestNG.DependsOnMethods@1d296da]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testC -->
-        <test-method signature="testB()[pri:0, instance:TestNG.DependsOnMethods@1d296da]" started-at="2023-12-03T14:08:40 GMT+05:30" name="testB" finished-at="2023-12-03T14:08:40 GMT+05:30" depends-on-methods="TestNG.DependsOnMethods.testC" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method TestNG.DependsOnMethods.testB() on instance TestNG.DependsOnMethods@1d296da depends on not successfully finished methods 
-[TestNG.DependsOnMethods.testC() on instance TestNG.DependsOnMethods@1d296da]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method TestNG.DependsOnMethods.testB() on instance TestNG.DependsOnMethods@1d296da depends on not successfully finished methods 
-[TestNG.DependsOnMethods.testC() on instance TestNG.DependsOnMethods@1d296da]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testB -->
-        <test-method is-config="true" signature="config_AC()[pri:0, instance:TestNG.DependsOnMethods@1d296da]" started-at="2023-12-03T14:08:40 GMT+05:30" name="config_AC" finished-at="2023-12-03T14:08:40 GMT+05:30" duration-ms="488" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- config_AC -->
-        <test-method is-config="true" signature="config_AT()[pri:0, instance:TestNG.DependsOnMethods@1d296da]" started-at="2023-12-03T14:08:40 GMT+05:30" name="config_AT" finished-at="2023-12-03T14:08:40 GMT+05:30" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- config_AT -->
-        <test-method is-config="true" signature="config_AS()[pri:0, instance:TestNG.DependsOnMethods@1d296da]" started-at="2023-12-03T14:08:41 GMT+05:30" name="config_AS" finished-at="2023-12-03T14:08:41 GMT+05:30" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- config_AS -->
-      </class> <!-- TestNG.DependsOnMethods -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- test -->
+      </class> <!-- SeleniumGrid.sameDevice -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
