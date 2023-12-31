@@ -8,5 +8,5 @@ public abstract class Visa implements Country{
 	}
 
 	public abstract void australia();
-
+	
 }

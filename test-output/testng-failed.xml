@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumGrid.sameDevice">
+      <class name="Mock.phonesBelowPrice">
         <methods>
           <include name="test"/>
         </methods>
-      </class> <!-- SeleniumGrid.sameDevice -->
+      </class> <!-- Mock.phonesBelowPrice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

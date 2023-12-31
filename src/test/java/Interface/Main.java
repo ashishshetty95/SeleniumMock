@@ -23,6 +23,5 @@ public class Main {
 		t2.usa();
 		
 		
-		
 	}
 }
